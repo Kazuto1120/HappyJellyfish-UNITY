@@ -22,17 +22,17 @@ public class IntroTextFadeInOut : MonoBehaviour
             spaceBarCount++;
             if(spaceBarCount==1){
                 StartCoroutine(FadeTextToFullAlpha(1f, textField));
-                textField.fontSize = 10;
+                textField.fontSize = 400;
                 textField.text = "WITH THE CURRENT STATE OF THE ECONOMY, THE ONLY WAY TO BECOME TRULY SUCESSFUL TO BE ABLE TO RUN A SUCCESSFUL BUSINESS";
             }
             if(spaceBarCount==2){
                 StartCoroutine(FadeTextToFullAlpha(1f, GetComponent<TMP_Text>()));
-                textField.fontSize = 14;
+                textField.fontSize = 500;
                 textField.text = "LET'S SEE IF YOU HAVE WHAT IT TAKES TO RUN A SUCCESSFUL BUSINESS";
             }
             if(spaceBarCount==3){
                 StartCoroutine(FadeTextToFullAlpha(1f, GetComponent<TMP_Text>()));
-                textField.fontSize = 16;
+                textField.fontSize = 600;
                 textField.text = "CAN YOU BECOME THE NEXT BIGSHOT";
             }
         }
