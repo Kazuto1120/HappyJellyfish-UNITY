@@ -9,10 +9,7 @@ public class test : MonoBehaviour
     [SerializeField] int num = 10;
     public void add()
     {
-        num++;
-        logic.AddComponent<logic>().adddebt(num);
-        logic.AddComponent<logic>().addmoney(num);
-        logic.AddComponent<logic>().addmorale();
+
     }
 
 }
