@@ -5,18 +5,19 @@ using UnityEngine.UI;
 public class barScript : MonoBehaviour
 {
     public Slider slider;
-    
+   
     // Start is called before the first frame update
     void Start()
     {
         if (slider == null)
         {
             slider = GetComponent<Slider>();
-        }  
+        }
+        
     }
-
-    public void Set(int num)
+    [ContextMenu("test")]
+    public void Set()
     {
-        slider.value = num;
+        slider.value -= 1;
     }
 }
