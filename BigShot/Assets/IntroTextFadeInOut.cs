@@ -8,6 +8,8 @@ public class IntroTextFadeInOut : MonoBehaviour
 {
     [SerializeField] int spaceBarCount;
     [SerializeField] TMP_Text textField;
+    [SerializeField] GameObject playButton;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,7 @@ public class IntroTextFadeInOut : MonoBehaviour
                 StartCoroutine(FadeTextToFullAlpha(1f, GetComponent<TMP_Text>()));
                 textField.fontSize = 600;
                 textField.text = "CAN YOU BECOME THE NEXT BIGSHOT";
+                SpawnPlayButton();
             }
         }
     }
@@ -47,4 +50,11 @@ public class IntroTextFadeInOut : MonoBehaviour
             yield return null;
         }
     }
+
+    void SpawnPlayButton(){
+        Vector3 position = new Vector3(0, (float)-3.5, 0);
+        GameObject canvas = GameObject.FindGameObjectWithTag("canvas");
+        Instantiate(playButton, position, Quaternion.identity, canvas.transform);
+    }
+
 }
