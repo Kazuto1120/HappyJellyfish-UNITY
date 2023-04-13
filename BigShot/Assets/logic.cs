@@ -30,6 +30,6 @@ public class logic : MonoBehaviour
         morale.GetComponent<Slider>().value = moralenum;
         debt.text = debtnum.ToString();
         money.text = moneynum.ToString();
-
+        
     }
 }

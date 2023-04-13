@@ -18,6 +18,6 @@ public class startGame : MonoBehaviour
     }
 
     public void loadGame(){
-        SceneManager.LoadScene("Investors event");
+        SceneManager.LoadScene("InvestorsEvent");
     }
 }
