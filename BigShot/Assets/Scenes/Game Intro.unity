@@ -470,7 +470,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8850701734876979193}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b2561d88578f46ff9ffd264babdeace, type: 3}
+  m_Script: {fileID: 11500000, guid: 649e49cc2c2594c8b97bb0ed04d3baf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8850701735615226891
@@ -660,4 +660,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spaceBarCount: 0
   textField: {fileID: 8850701735615226893}
-  playButton: {fileID: 3199115245813410091, guid: d88fb9a53c2f748a5b54e17af4b3b2ea, type: 3}
+  PlayButton: {fileID: 6556183543855549792, guid: 9c93515a32e8f41f4a93bfc29a4cdbc1, type: 3}

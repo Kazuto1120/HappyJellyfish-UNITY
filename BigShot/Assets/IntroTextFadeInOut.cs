@@ -8,7 +8,7 @@ public class IntroTextFadeInOut : MonoBehaviour
 {
     [SerializeField] int spaceBarCount;
     [SerializeField] TMP_Text textField;
-    [SerializeField] GameObject playButton;
+    [SerializeField] GameObject PlayButton;
     
     // Start is called before the first frame update
     void Start()
@@ -54,7 +54,7 @@ public class IntroTextFadeInOut : MonoBehaviour
     void SpawnPlayButton(){
         Vector3 position = new Vector3(0, (float)-3.5, 0);
         GameObject canvas = GameObject.FindGameObjectWithTag("canvas");
-        Instantiate(playButton, position, Quaternion.identity, canvas.transform);
+        Instantiate(PlayButton, position, Quaternion.identity, canvas.transform);
     }
 
 }
