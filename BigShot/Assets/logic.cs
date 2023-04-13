@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class logic : MonoBehaviour
 {
     public Text money;
@@ -48,5 +49,9 @@ public class logic : MonoBehaviour
         debt.text = debtnum.ToString();
         money.text = moneynum.ToString();
         monPay = (int)(debtnum * (interest * 0.01));
+        if(moneynum < 0)
+        {
+            SceneManager.LoadScene("gameover");
+        }
     }
 }

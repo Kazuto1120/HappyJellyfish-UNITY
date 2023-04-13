@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/Game Introduction.unity
+    path: 
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Game Intro.unity
     guid: dde58d81223c14466b4ff4f532541f56
   - enabled: 0
-    path: Assets/Scenes/Game Start.unity
+    path: 
     guid: 6416ed556142b4313b047120efabf5b4
   - enabled: 1
     path: Assets/Scenes/InvestorsEvent.unity
@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FamilyLoanChoice.unity
     guid: 2b9a4ce0380224137b5ea90a9e95026d
+  - enabled: 1
+    path: Assets/Scenes/gameover.unity
+    guid: 85d1f11b1d6c9e4479e7b26c5c6b669b
   m_configObjects: {}
