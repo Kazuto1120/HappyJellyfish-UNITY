@@ -8,7 +8,10 @@ public class startGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        PlayerPrefs.SetInt("moneynum", 0);
+        PlayerPrefs.SetInt("debtnum", 0);
+        PlayerPrefs.SetInt("moralenum",0);
+        PlayerPrefs.SetInt("interest", 0);
     }
 
     // Update is called once per frame
