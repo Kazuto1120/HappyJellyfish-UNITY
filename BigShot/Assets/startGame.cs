@@ -10,7 +10,7 @@ public class startGame : MonoBehaviour
     {
         PlayerPrefs.SetInt("moneynum", 0);
         PlayerPrefs.SetInt("debtnum", 0);
-        PlayerPrefs.SetInt("moralenum",0);
+        PlayerPrefs.SetInt("moralenum",100);
         PlayerPrefs.SetInt("interest", 0);
         PlayerPrefs.SetInt("customer", 0);
     }
