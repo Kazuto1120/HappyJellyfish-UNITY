@@ -18,15 +18,8 @@ public class sceneManager : MonoBehaviour
         
     }
 
-    public void playInvestorScene(){
-        SceneManager.LoadScene("InvestorChoice");
+    public void playLocationScene(){
+        SceneManager.LoadScene("LocationEvent");
     }
 
-    public void playBankLoanScene(){
-        SceneManager.LoadScene("BankLoanChoice");
-    }
-
-    public void playFamilyLoanScene(){
-        SceneManager.LoadScene("FamilyLoanChoice");
-    }
 }
