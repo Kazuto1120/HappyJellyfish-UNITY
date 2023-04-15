@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class textmanager : MonoBehaviour
 {
     [SerializeField] TMP_Text textField;
     [SerializeField] int option;
     [SerializeField] bool picked = false;
+    [SerializeField] bool next = false;
 
     // Start is called before the first frame update
     void Start()
@@ -51,6 +53,13 @@ public class textmanager : MonoBehaviour
     {
         option = num;
         picked = true;
+        next = true;
         
     }
+    public void playInvestorScene()
+    {
+        if (next) {
+            SceneManager.LoadScene("InvestorChoice"); }
+    }
+
 }
