@@ -12,6 +12,7 @@ public class startGame : MonoBehaviour
         PlayerPrefs.SetInt("debtnum", 0);
         PlayerPrefs.SetInt("moralenum",0);
         PlayerPrefs.SetInt("interest", 0);
+        PlayerPrefs.SetInt("customer", 0);
     }
 
     // Update is called once per frame

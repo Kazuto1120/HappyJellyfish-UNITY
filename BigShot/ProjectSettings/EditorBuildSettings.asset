@@ -7,26 +7,62 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Game Intro.unity
     guid: dde58d81223c14466b4ff4f532541f56
   - enabled: 0
     path: 
-    guid: 6416ed556142b4313b047120efabf5b4
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/InvestorsEvent.unity
     guid: 07ba660d03dd84cfa9babaf65570c949
   - enabled: 1
     path: Assets/Scenes/InvestorChoice.unity
     guid: 2a066be0cf77c4df7885e4cc06db1d60
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BankLoanChoice.unity
     guid: 93d6391f59677417db4c32423614f2ad
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/FamilyLoanChoice.unity
     guid: 2b9a4ce0380224137b5ea90a9e95026d
   - enabled: 1
     path: Assets/Scenes/gameover.unity
     guid: 85d1f11b1d6c9e4479e7b26c5c6b669b
+  - enabled: 0
+    path: Assets/Scenes/scene_1 1.unity
+    guid: d21891f8a62e7ed429b90c13b5d30810
+  - enabled: 0
+    path: Assets/Scenes/scene_1 2.unity
+    guid: 16b4b2621e3636e499cb71ffe3118b39
+  - enabled: 0
+    path: Assets/Scenes/scene_1 3.unity
+    guid: 86f1df41a20e97c42860c229e39a7e29
+  - enabled: 0
+    path: Assets/Scenes/scene_1 4.unity
+    guid: 8851edcdae5724b4d856d88414d97d12
+  - enabled: 0
+    path: Assets/Scenes/scene_1 5.unity
+    guid: c14875c1699f35845884738298d611cc
+  - enabled: 0
+    path: Assets/Scenes/scene_1 6.unity
+    guid: 29df0c4d0d1fcb843948b30b76a1c871
+  - enabled: 0
+    path: Assets/Scenes/scene_1 7.unity
+    guid: 5d07a5df1064e944dba9bd759812134f
+  - enabled: 0
+    path: Assets/Scenes/scene_1 8.unity
+    guid: 041a4c5deb64bd04a993ab953baf89af
+  - enabled: 0
+    path: Assets/Scenes/scene_1 9.unity
+    guid: 0221e3499da56614b89c127a0d3e0f74
+  - enabled: 0
+    path: Assets/Scenes/scene_1 10.unity
+    guid: f50fa5dc8b2bca248b604580855aeccd
+  - enabled: 0
+    path: Assets/Scenes/scene_1 11.unity
+    guid: 605d9fe21f77c7446bd21c9e3731c5b5
+  - enabled: 0
+    path: Assets/Scenes/scene_1 12.unity
+    guid: 1cbd7dccac2cc3e4296d714ac60faf9b
   m_configObjects: {}

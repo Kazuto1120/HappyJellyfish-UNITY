@@ -11,14 +11,14 @@ public class logic : MonoBehaviour
     public int moneynum = 0;
     public int debtnum = 0;
     public int moralenum = 0;
-    public int interest = 0;
     public int monPay = 0;
+    public int customer = 0;
     private void Start()
     {
         moneynum = PlayerPrefs.GetInt("moneynum");
         debtnum = PlayerPrefs.GetInt("debtnum");
         moralenum = PlayerPrefs.GetInt("moralenum");
-        interest = PlayerPrefs.GetInt("interest");
+        customer = PlayerPrefs.GetInt("customer");
         
     }
     public void addmoney(int num) {
@@ -37,10 +37,12 @@ public class logic : MonoBehaviour
         moralenum += num;
         PlayerPrefs.SetInt("moralenum",moralenum);
     }
-    public void addinterest(int num)
+  
+    public void addcustomer(int num)
     {
-        interest += num;
-        PlayerPrefs.SetInt("interest",interest);
+        int temp = Random.Range(0 + num, 20 + num);
+        customer += temp;
+        PlayerPrefs.SetInt("customer", customer);
     }
 
     void Update()
@@ -48,7 +50,7 @@ public class logic : MonoBehaviour
         morale.GetComponent<Slider>().value = moralenum;
         debt.text = debtnum.ToString();
         money.text = moneynum.ToString();
-        monPay = (int)(debtnum * (interest * 0.01));
+        monPay = (int)(debtnum / 10);
         if(moneynum < 0||moralenum < 0)
         {
             SceneManager.LoadScene("gameover");
