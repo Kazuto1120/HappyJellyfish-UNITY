@@ -49,7 +49,7 @@ public class logic : MonoBehaviour
         debt.text = debtnum.ToString();
         money.text = moneynum.ToString();
         monPay = (int)(debtnum * (interest * 0.01));
-        if(moneynum < 0)
+        if(moneynum < 0||moralenum < 0)
         {
             SceneManager.LoadScene("gameover");
         }
