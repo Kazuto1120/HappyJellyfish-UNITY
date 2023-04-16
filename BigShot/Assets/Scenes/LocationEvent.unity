@@ -919,7 +919,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1859609235}
         m_TargetAssemblyTypeName: logic, Assembly-CSharp
-        m_MethodName: adddebt
+        m_MethodName: addmoney
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
