@@ -11,7 +11,7 @@ public class logic : MonoBehaviour
     public int moneynum = 0;
     public int debtnum = 0;
     public int moralenum = 0;
-    public int monPay = 0;
+    public int monPay = 5000;
     public int customer = 0;
     private void Start()
     {
@@ -19,6 +19,7 @@ public class logic : MonoBehaviour
         debtnum = PlayerPrefs.GetInt("debtnum");
         moralenum = PlayerPrefs.GetInt("moralenum");
         customer = PlayerPrefs.GetInt("customer");
+        monPay = PlayerPrefs.GetInt("monPay");
         
     }
     public void addmoney(int num) {
@@ -40,6 +41,10 @@ public class logic : MonoBehaviour
             moralenum = 100;
         }
         PlayerPrefs.SetInt("moralenum",moralenum);
+    }
+    public void addcost(int num) {
+        monPay += num;
+        PlayerPrefs.SetInt("monPay", monPay);
     }
   
     public void addcustomer(int num)
