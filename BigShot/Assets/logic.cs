@@ -35,6 +35,10 @@ public class logic : MonoBehaviour
     public void addmorale(int num)
     {
         moralenum += num;
+        if(moralenum > 100)
+        {
+            moralenum = 100;
+        }
         PlayerPrefs.SetInt("moralenum",moralenum);
     }
   

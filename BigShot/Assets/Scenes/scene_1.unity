@@ -1634,7 +1634,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1859609235}
         m_TargetAssemblyTypeName: logic, Assembly-CSharp
-        m_MethodName: adddebt
+        m_MethodName: addmoney
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1983,7 +1983,6 @@ MonoBehaviour:
   moneynum: 0
   debtnum: 0
   moralenum: 0
-  interest: 0
   monPay: 0
   customer: 0
 --- !u!4 &1859609236
