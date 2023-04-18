@@ -492,7 +492,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 'Play Again
+
+'
 --- !u!222 &1237548262
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -514,7 +516,7 @@ GameObject:
   - component: {fileID: 1382421067}
   - component: {fileID: 1382421066}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: Play Again Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
