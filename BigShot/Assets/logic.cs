@@ -13,6 +13,7 @@ public class logic : MonoBehaviour
     public int moralenum = 0;
     public int monPay = 5000;
     public int customer = 0;
+    public int month = 0;
     private void Start()
     {
         moneynum = PlayerPrefs.GetInt("moneynum");
@@ -20,6 +21,7 @@ public class logic : MonoBehaviour
         moralenum = PlayerPrefs.GetInt("moralenum");
         customer = PlayerPrefs.GetInt("customer");
         monPay = PlayerPrefs.GetInt("monPay");
+        month = PlayerPrefs.GetInt("month");
         
     }
     public void addmoney(int num) {
@@ -52,6 +54,18 @@ public class logic : MonoBehaviour
         int temp = Random.Range(0 + num, 20 + num);
         customer += temp;
         PlayerPrefs.SetInt("customer", customer);
+    }
+    public void nextscene()
+    {
+        int x = 1;
+
+
+            scene();
+    }
+    public void scene() {
+        month += 1;
+        PlayerPrefs.SetInt("month", month);
+        SceneManager.LoadScene(month+2);
     }
 
     void Update()

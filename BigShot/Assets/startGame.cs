@@ -13,6 +13,7 @@ public class startGame : MonoBehaviour
         PlayerPrefs.SetInt("moralenum",100);
         PlayerPrefs.SetInt("interest", 0);
         PlayerPrefs.SetInt("customer", 0);
+        PlayerPrefs.SetInt("month", 0);
     }
 
     // Update is called once per frame

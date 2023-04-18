@@ -919,7 +919,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MONTH 2
+  m_Text: MONTH 4
 --- !u!222 &1249465872
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1456,7 +1456,6 @@ MonoBehaviour:
   moralenum: 0
   monPay: 0
   customer: 0
-  month: 0
 --- !u!4 &1859609236
 Transform:
   m_ObjectHideFlags: 0
