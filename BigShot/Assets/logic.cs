@@ -57,10 +57,16 @@ public class logic : MonoBehaviour
     }
     public void nextscene()
     {
-        int x = 1;
-
-
+        int x = Random.Range(1,4);
+        if (x < 2)
+        {
             scene();
+        }
+        else
+        {
+            int y = Random.RandomRange(16, 19);
+        SceneManager.LoadScene(y);
+        }
     }
     public void scene() {
         month += 1;
