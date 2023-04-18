@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 2632550281132475528}
   - component: {fileID: 5948868537956888986}
   m_Layer: 5
-  m_Name: NextButton
+  m_Name: InvestToLocation Next Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
