@@ -813,7 +813,7 @@ GameObject:
   - component: {fileID: 1020955711}
   - component: {fileID: 1020955713}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Main Prompt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -967,7 +967,7 @@ GameObject:
   - component: {fileID: 1114941670}
   - component: {fileID: 1114941669}
   m_Layer: 5
-  m_Name: Button (Legacy) (2)
+  m_Name: Bank Loan Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1152,7 +1152,7 @@ GameObject:
   - component: {fileID: 1371424576}
   - component: {fileID: 1371424575}
   m_Layer: 5
-  m_Name: Button (Legacy) (2)
+  m_Name: Family Loan Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1612,7 +1612,7 @@ GameObject:
   - component: {fileID: 1575792245}
   - component: {fileID: 1575792244}
   m_Layer: 5
-  m_Name: Button (Legacy) (3)
+  m_Name: Investors Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2084,6 +2084,7 @@ MonoBehaviour:
   moralenum: 0
   monPay: 0
   customer: 0
+  month: 0
 --- !u!4 &1859609236
 Transform:
   m_ObjectHideFlags: 0

@@ -981,7 +981,7 @@ GameObject:
   - component: {fileID: 1114941670}
   - component: {fileID: 1114941669}
   m_Layer: 5
-  m_Name: Button (Legacy) (2)
+  m_Name: Humble Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1234,7 +1234,7 @@ GameObject:
   - component: {fileID: 1371424576}
   - component: {fileID: 1371424575}
   m_Layer: 5
-  m_Name: Button (Legacy) (2)
+  m_Name: Basement Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1750,7 +1750,7 @@ GameObject:
   - component: {fileID: 1575792245}
   - component: {fileID: 1575792244}
   m_Layer: 5
-  m_Name: Button (Legacy) (3)
+  m_Name: High-end Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1997,7 +1997,7 @@ GameObject:
   - component: {fileID: 1745875379}
   - component: {fileID: 1745875378}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Humble Button Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2214,6 +2214,7 @@ MonoBehaviour:
   moralenum: 0
   monPay: 0
   customer: 0
+  month: 0
 --- !u!4 &1859609236
 Transform:
   m_ObjectHideFlags: 0
@@ -2321,7 +2322,7 @@ GameObject:
   - component: {fileID: 1980322112}
   - component: {fileID: 1980322111}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Basement button text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2401,7 +2402,7 @@ GameObject:
   - component: {fileID: 2118682924}
   - component: {fileID: 2118682923}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: High-end Button Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
