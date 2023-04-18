@@ -304,8 +304,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1859609235}
         m_TargetAssemblyTypeName: logic, Assembly-CSharp
-        m_MethodName: adddebt
-        m_Mode: 3
+        m_MethodName: nextscene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1456,6 +1456,7 @@ MonoBehaviour:
   moralenum: 0
   monPay: 0
   customer: 0
+  month: 0
 --- !u!4 &1859609236
 Transform:
   m_ObjectHideFlags: 0
