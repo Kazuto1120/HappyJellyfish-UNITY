@@ -30,6 +30,6 @@ public class ChoiceButtonsToNext : MonoBehaviour
     {
         Vector3 position = new Vector3((float)550, (float)225, 0);
         GameObject canvas = GameObject.Find("Canvas");
-        Instantiate(NextButton, position, Quaternion.identity, canvas.transform);
+        Instantiate(NextButton, canvas.transform.position, Quaternion.identity, canvas.transform);
     }
 }
