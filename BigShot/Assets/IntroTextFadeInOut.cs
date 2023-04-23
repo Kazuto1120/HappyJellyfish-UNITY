@@ -23,19 +23,21 @@ public class IntroTextFadeInOut : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space)){
             spaceBarCount++;
             if(spaceBarCount==1){
+                Destroy(GameObject.Find("click"));
+                Destroy(GameObject.Find("to continue"));
+                Destroy(GameObject.Find("spacebar"));
                 StartCoroutine(FadeTextToFullAlpha(1f, textField));
-                textField.fontSize = 400;
+                textField.fontSize = 100;
                 textField.text = "WITH THE CURRENT STATE OF THE ECONOMY, THE ONLY WAY TO BECOME TRULY SUCESSFUL TO BE ABLE TO RUN A SUCCESSFUL BUSINESS";
             }
             if(spaceBarCount==2){
                 StartCoroutine(FadeTextToFullAlpha(1f, GetComponent<TMP_Text>()));
-                textField.fontSize = 500;
                 textField.text = "LET'S SEE IF YOU HAVE WHAT IT TAKES TO RUN A SUCCESSFUL BUSINESS";
             }
             if(spaceBarCount==3){
                 StartCoroutine(FadeTextToFullAlpha(1f, GetComponent<TMP_Text>()));
-                textField.fontSize = 600;
                 textField.text = "CAN YOU BECOME THE NEXT BIGSHOT";
+                textField.fontSize = 150;
                 SpawnPlayButton();
             }
         }
@@ -52,7 +54,7 @@ public class IntroTextFadeInOut : MonoBehaviour
     }
 
     void SpawnPlayButton(){
-        Vector3 position = new Vector3(0, (float)-3.5, 0);
+        Vector3 position = new Vector3(0, (float)-2.5, 0);
         GameObject canvas = GameObject.FindGameObjectWithTag("canvas");
         Instantiate(PlayButton, position, Quaternion.identity, canvas.transform);
     }

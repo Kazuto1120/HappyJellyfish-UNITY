@@ -12,4 +12,10 @@ public class test : MonoBehaviour
 
     }
 
+    void Start(){
+        if(logic==null){
+            logic=GameObject.Find("logicmanager");
+        }
+    }
+
 }

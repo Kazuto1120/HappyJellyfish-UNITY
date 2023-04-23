@@ -28,8 +28,8 @@ public class ChoiceButtonsToNext : MonoBehaviour
 
     public void SpawnNextButton()
     {
-        Vector3 position = new Vector3((float)550, (float)225, 0);
+        Vector3 position = new Vector3((float)4.67, (float)0.83, 0);
         GameObject canvas = GameObject.Find("Canvas");
-        Instantiate(NextButton, canvas.transform.position, Quaternion.identity, canvas.transform);
+        Instantiate(NextButton, position, Quaternion.identity, canvas.transform);
     }
 }

@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 public class logic : MonoBehaviour
 {
-    public Text money;
-    public Text debt;
+    public TMP_Text money;
+    public TMP_Text debt;
     public GameObject morale;
     public int moneynum = 0;
     public int debtnum = 0;
@@ -14,6 +16,8 @@ public class logic : MonoBehaviour
     public int monPay = 5000;
     public int customer = 0;
     public int month = 0;
+    [SerializeField] GameObject NextButton; 
+
     private void Start()
     {
         moneynum = PlayerPrefs.GetInt("moneynum");
@@ -72,6 +76,20 @@ public class logic : MonoBehaviour
         month += 1;
         PlayerPrefs.SetInt("month", month);
         SceneManager.LoadScene(month+2);
+    }
+
+    public void replaceWithNextButton()
+    {
+        GameObject choiceButtons = GameObject.Find("ChoiceButtonsCanvas");
+        Destroy(choiceButtons);
+        spawnNextButton();
+    }
+
+    public void spawnNextButton()
+    {
+        Vector3 position = new Vector3((float)4.67, (float)0.83, 0);
+        GameObject canvas = GameObject.Find("Canvas");
+        Instantiate(NextButton, position, Quaternion.identity, canvas.transform);
     }
 
     void Update()
