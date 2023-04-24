@@ -147,8 +147,6 @@ GameObject:
   - component: {fileID: 1789748531741333358}
   - component: {fileID: 1789748531741333359}
   - component: {fileID: 1789748531741333352}
-  - component: {fileID: 2632522244816037579}
-  - component: {fileID: 6463818792028921073}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -259,7 +257,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6463818792028921073}
+      - m_Target: {fileID: 4513238071831086003, guid: de48a39f5f97e95419ebbd0e17d4613c, type: 3}
         m_TargetAssemblyTypeName: logic, Assembly-CSharp
         m_MethodName: nextscene
         m_Mode: 1
@@ -271,39 +269,3 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2632522244816037579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7325163498613175738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af7a3f8af10e76343ade2187715357be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  logic: {fileID: 0}
-  num: 10
---- !u!114 &6463818792028921073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7325163498613175738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba543dd9fd072ba4aae47f74c2bf0187, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  money: {fileID: 0}
-  debt: {fileID: 0}
-  morale: {fileID: 0}
-  moneynum: 0
-  debtnum: 0
-  moralenum: 0
-  monPay: 5000
-  customer: 0
-  month: 0
-  NextButton: {fileID: 7325163498613175738}
