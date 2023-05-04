@@ -104,9 +104,9 @@ public class logic : MonoBehaviour
     }
     public void pay()
     {
-        int temp = (customer * moralenum * 5) - monPay-(debtnum/(12-month));
+        int temp = (customer * moralenum * 5) - monPay-(debtnum/(12));
         addmoney(temp);
-        adddebt(-(debtnum / (12 - month)));
+        adddebt(-(debtnum / (12)));
     }
 
     void Update()
