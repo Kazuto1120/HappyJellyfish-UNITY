@@ -16,6 +16,7 @@ public class logic : MonoBehaviour
     public int monPay = 5000;
     public int customer = 0;
     public int month = 0;
+    private int count = 0;
     [SerializeField] GameObject NextButton;
     private void Awake()
     {
@@ -23,7 +24,7 @@ public class logic : MonoBehaviour
     }
     private void Start()
     {
-        
+        count = PlayerPrefs.GetInt("count");
         moneynum = PlayerPrefs.GetInt("moneynum");
         debtnum = PlayerPrefs.GetInt("debtnum");
         moralenum = PlayerPrefs.GetInt("moralenum");
@@ -72,13 +73,18 @@ public class logic : MonoBehaviour
     {
 
         int x = Random.Range(1,4);
-        if (x < 2||month<=0)
+        if ((x < 2&&count>=1)||count>2)
         {
+            count = 0;
+            PlayerPrefs.SetInt("count", count);
             scene();
+            
         }
         else
         {
-            int y = Random.RandomRange(16, 21);
+            count++;
+            PlayerPrefs.SetInt("count", count);
+            int y = Random.RandomRange(16, 23);
             
              SceneManager.LoadScene(y);
         }
