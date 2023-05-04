@@ -134,6 +134,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EVENT3.unity
     guid: e08f6b53b773a7c4fb8e423fb51ebfba
+  - enabled: 1
+    path: Assets/Scenes/EVENT4.unity
+    guid: 7ba6ffe8eed873c478e1e7a4480a218f
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

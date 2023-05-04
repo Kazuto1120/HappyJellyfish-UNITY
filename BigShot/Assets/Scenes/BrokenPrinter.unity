@@ -1129,7 +1129,7 @@ GameObject:
   - component: {fileID: 1114941672}
   - component: {fileID: 1114941671}
   - component: {fileID: 1114941670}
-  - component: {fileID: 1114941669}
+  - component: {fileID: 1114941673}
   m_Layer: 5
   m_Name: Button (Legacy) (2)
   m_TagString: Untagged
@@ -1158,20 +1158,6 @@ RectTransform:
   m_AnchoredPosition: {x: 415.00385, y: 85.572266}
   m_SizeDelta: {x: 360, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1114941669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1114941667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af7a3f8af10e76343ade2187715357be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  logic: {fileID: 1859609234}
-  num: 10
 --- !u!114 &1114941670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1240,6 +1226,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1114941673}
+        m_TargetAssemblyTypeName: scenevent, Assembly-CSharp
+        m_MethodName: changetext
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: You decided to be a cheapskate and save some money. However
+            your employee are annoy that they have to deal with not having a printer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1114941671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1278,6 +1277,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114941667}
   m_CullTransparentMesh: 1
+--- !u!114 &1114941673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114941667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fff26512c31ca54f8312f0cb66ad418, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logicmanager: {fileID: 0}
+  textfield: {fileID: 0}
 --- !u!1 &1138470746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1425,7 +1438,7 @@ GameObject:
   - component: {fileID: 1371424578}
   - component: {fileID: 1371424577}
   - component: {fileID: 1371424576}
-  - component: {fileID: 1371424575}
+  - component: {fileID: 1371424579}
   m_Layer: 5
   m_Name: Button (Legacy) (2)
   m_TagString: Untagged
@@ -1454,20 +1467,6 @@ RectTransform:
   m_AnchoredPosition: {x: 415.0038, y: -62.42775}
   m_SizeDelta: {x: 360, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1371424575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371424573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af7a3f8af10e76343ade2187715357be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  logic: {fileID: 1859609234}
-  num: 10
 --- !u!114 &1371424576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1548,6 +1547,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1371424579}
+        m_TargetAssemblyTypeName: scenevent, Assembly-CSharp
+        m_MethodName: changetext
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: You decide to splurge and buy a new printer. Your employee
+            are happy to have a boss like you.
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1371424577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1586,6 +1598,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371424573}
   m_CullTransparentMesh: 1
+--- !u!114 &1371424579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371424573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fff26512c31ca54f8312f0cb66ad418, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logicmanager: {fileID: 0}
+  textfield: {fileID: 0}
 --- !u!1 &1482628787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1750,7 +1776,7 @@ GameObject:
   - component: {fileID: 1575792247}
   - component: {fileID: 1575792246}
   - component: {fileID: 1575792245}
-  - component: {fileID: 1575792244}
+  - component: {fileID: 1575792248}
   m_Layer: 5
   m_Name: Button (Legacy) (3)
   m_TagString: Untagged
@@ -1779,20 +1805,6 @@ RectTransform:
   m_AnchoredPosition: {x: 415.00385, y: 243.57419}
   m_SizeDelta: {x: 360, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1575792244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1575792242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af7a3f8af10e76343ade2187715357be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  logic: {fileID: 1859609234}
-  num: 10
 --- !u!114 &1575792245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1861,6 +1873,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1575792248}
+        m_TargetAssemblyTypeName: scenevent, Assembly-CSharp
+        m_MethodName: changetext
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: You decide it is better to fix the printer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1575792246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1899,6 +1923,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575792242}
   m_CullTransparentMesh: 1
+--- !u!114 &1575792248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575792242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fff26512c31ca54f8312f0cb66ad418, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logicmanager: {fileID: 0}
+  textfield: {fileID: 0}
 --- !u!1 &1745875376
 GameObject:
   m_ObjectHideFlags: 0

@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   money: {fileID: 0}
   debt: {fileID: 0}
-  morale: {fileID: 0}
+  morale: {fileID: 1065079002700681671, guid: e845b4d1e95874543ba87550bf28a84d, type: 3}
   moneynum: 0
   debtnum: 0
   moralenum: 0

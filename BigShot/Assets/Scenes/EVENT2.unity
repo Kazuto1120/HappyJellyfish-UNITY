@@ -699,7 +699,7 @@ GameObject:
   - component: {fileID: 1114941672}
   - component: {fileID: 1114941671}
   - component: {fileID: 1114941670}
-  - component: {fileID: 1114941669}
+  - component: {fileID: 1114941673}
   m_Layer: 5
   m_Name: Button (Legacy) (2)
   m_TagString: Untagged
@@ -728,20 +728,6 @@ RectTransform:
   m_AnchoredPosition: {x: 415.00003, y: 40}
   m_SizeDelta: {x: 360, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1114941669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1114941667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af7a3f8af10e76343ade2187715357be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  logic: {fileID: 1859609234}
-  num: 10
 --- !u!114 &1114941670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -788,12 +774,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1859609235}
         m_TargetAssemblyTypeName: logic, Assembly-CSharp
-        m_MethodName: adddebt
+        m_MethodName: addmorale
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
+          m_IntArgument: -2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -808,6 +794,19 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1114941673}
+        m_TargetAssemblyTypeName: scenevent, Assembly-CSharp
+        m_MethodName: changetext
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Well you are the bost right. Who gave the employee the
+            right of  telling you what to do.
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1114941671
@@ -848,6 +847,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114941667}
   m_CullTransparentMesh: 1
+--- !u!114 &1114941673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114941667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fff26512c31ca54f8312f0cb66ad418, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logicmanager: {fileID: 0}
+  textfield: {fileID: 0}
 --- !u!1 &1325390346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1509,7 +1522,7 @@ GameObject:
   - component: {fileID: 1575792247}
   - component: {fileID: 1575792246}
   - component: {fileID: 1575792245}
-  - component: {fileID: 1575792244}
+  - component: {fileID: 1575792248}
   m_Layer: 5
   m_Name: Button (Legacy) (3)
   m_TagString: Untagged
@@ -1538,20 +1551,6 @@ RectTransform:
   m_AnchoredPosition: {x: 415, y: 180}
   m_SizeDelta: {x: 360, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1575792244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1575792242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af7a3f8af10e76343ade2187715357be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  logic: {fileID: 1859609234}
-  num: 10
 --- !u!114 &1575792245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1598,12 +1597,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1859609235}
         m_TargetAssemblyTypeName: logic, Assembly-CSharp
-        m_MethodName: addmoney
+        m_MethodName: addMonpay
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
+          m_IntArgument: 1000
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1618,6 +1617,19 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1575792248}
+        m_TargetAssemblyTypeName: scenevent, Assembly-CSharp
+        m_MethodName: changetext
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: You are such a good boss for listing to your employee
+            complain. But your wallet  wont think the same thing
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1575792246
@@ -1658,6 +1670,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575792242}
   m_CullTransparentMesh: 1
+--- !u!114 &1575792248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575792242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fff26512c31ca54f8312f0cb66ad418, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logicmanager: {fileID: 0}
+  textfield: {fileID: 0}
 --- !u!1 &1640181221
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,10 +16,14 @@ public class logic : MonoBehaviour
     public int monPay = 5000;
     public int customer = 0;
     public int month = 0;
-    [SerializeField] GameObject NextButton; 
-
+    [SerializeField] GameObject NextButton;
+    private void Awake()
+    {
+        morale = GameObject.Find("morale");
+    }
     private void Start()
     {
+        
         moneynum = PlayerPrefs.GetInt("moneynum");
         debtnum = PlayerPrefs.GetInt("debtnum");
         moralenum = PlayerPrefs.GetInt("moralenum");
@@ -27,6 +31,11 @@ public class logic : MonoBehaviour
         monPay = PlayerPrefs.GetInt("monPay");
         month = PlayerPrefs.GetInt("month");
         
+    }
+    public void addMonpay(int num)
+    {
+        monPay += num;
+        PlayerPrefs.SetInt("monPay", monPay);
     }
     public void addmoney(int num) {
         moneynum += num;
@@ -61,15 +70,17 @@ public class logic : MonoBehaviour
     }
     public void nextscene()
     {
+
         int x = Random.Range(1,4);
-        if (x < 2)
+        if (x < 2||month<=0)
         {
             scene();
         }
         else
         {
             int y = Random.RandomRange(16, 19);
-        SceneManager.LoadScene(y);
+            
+             SceneManager.LoadScene(y);
         }
     }
     public void scene() {
@@ -90,6 +101,12 @@ public class logic : MonoBehaviour
         Vector3 position = new Vector3((float)4.67, (float)0.83, 0);
         GameObject canvas = GameObject.Find("Canvas");
         Instantiate(NextButton, position, Quaternion.identity, canvas.transform);
+    }
+    public void pay()
+    {
+        int temp = (customer * moralenum * 5) - monPay-(debtnum/(12-month));
+        addmoney(temp);
+        adddebt(-(debtnum / (12 - month)));
     }
 
     void Update()
