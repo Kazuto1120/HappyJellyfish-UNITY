@@ -78,7 +78,7 @@ public class logic : MonoBehaviour
         }
         else
         {
-            int y = Random.RandomRange(16, 19);
+            int y = Random.RandomRange(16, 21);
             
              SceneManager.LoadScene(y);
         }

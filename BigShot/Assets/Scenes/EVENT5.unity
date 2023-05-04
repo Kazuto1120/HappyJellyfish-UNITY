@@ -705,7 +705,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.51500005}
-  m_AnchoredPosition: {x: 1.53, y: -3.85}
+  m_AnchoredPosition: {x: -1, y: -3.85}
   m_SizeDelta: {x: 790.43, y: 439.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &720848247
@@ -744,7 +744,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: some event
+  m_text: your supplier have decided to raise prices on you. what would you do?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6c5e503130494a269aa7673106868b5, type: 2}
   m_sharedMaterial: {fileID: -2763772915261216280, guid: d6c5e503130494a269aa7673106868b5, type: 2}
@@ -833,9 +833,9 @@ GameObject:
   - component: {fileID: 1114941672}
   - component: {fileID: 1114941671}
   - component: {fileID: 1114941670}
-  - component: {fileID: 1114941669}
+  - component: {fileID: 1114941673}
   m_Layer: 5
-  m_Name: Button (Legacy) (2)
+  m_Name: ChoiceButtonsCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -862,20 +862,6 @@ RectTransform:
   m_AnchoredPosition: {x: 415, y: 86}
   m_SizeDelta: {x: 360, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1114941669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1114941667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af7a3f8af10e76343ade2187715357be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  logic: {fileID: 1859609234}
-  num: 10
 --- !u!114 &1114941670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -932,6 +918,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1114941673}
+        m_TargetAssemblyTypeName: scenevent, Assembly-CSharp
+        m_MethodName: changesupplier
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1859609235}
+        m_TargetAssemblyTypeName: logic, Assembly-CSharp
+        m_MethodName: replaceWithNextButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1114941671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -970,6 +980,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114941667}
   m_CullTransparentMesh: 1
+--- !u!114 &1114941673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114941667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fff26512c31ca54f8312f0cb66ad418, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logicmanager: {fileID: 0}
+  textfield: {fileID: 0}
 --- !u!1 &1185301935
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,9 +1189,9 @@ GameObject:
   - component: {fileID: 1371424578}
   - component: {fileID: 1371424577}
   - component: {fileID: 1371424576}
-  - component: {fileID: 1371424575}
+  - component: {fileID: 1371424579}
   m_Layer: 5
-  m_Name: Button (Legacy) (2)
+  m_Name: ChoiceButtonsCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1194,20 +1218,6 @@ RectTransform:
   m_AnchoredPosition: {x: 416, y: -62}
   m_SizeDelta: {x: 360, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1371424575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371424573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af7a3f8af10e76343ade2187715357be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  logic: {fileID: 1859609234}
-  num: 10
 --- !u!114 &1371424576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1254,12 +1264,36 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1859609235}
         m_TargetAssemblyTypeName: logic, Assembly-CSharp
-        m_MethodName: adddebt
+        m_MethodName: addMonpay
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
+          m_IntArgument: 500
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1371424579}
+        m_TargetAssemblyTypeName: scenevent, Assembly-CSharp
+        m_MethodName: changetext
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: What? I will take that as accepting.
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1859609235}
+        m_TargetAssemblyTypeName: logic, Assembly-CSharp
+        m_MethodName: replaceWithNextButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1302,6 +1336,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371424573}
   m_CullTransparentMesh: 1
+--- !u!114 &1371424579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371424573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fff26512c31ca54f8312f0cb66ad418, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logicmanager: {fileID: 0}
+  textfield: {fileID: 0}
 --- !u!1 &1416985641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1736,9 +1784,8 @@ GameObject:
   - component: {fileID: 1575792247}
   - component: {fileID: 1575792246}
   - component: {fileID: 1575792245}
-  - component: {fileID: 1575792244}
   m_Layer: 5
-  m_Name: Button (Legacy) (3)
+  m_Name: ChoiceButtonsCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1765,20 +1812,6 @@ RectTransform:
   m_AnchoredPosition: {x: 415, y: 244}
   m_SizeDelta: {x: 360, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1575792244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1575792242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af7a3f8af10e76343ade2187715357be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  logic: {fileID: 1859609234}
-  num: 10
 --- !u!114 &1575792245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1825,12 +1858,24 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1859609235}
         m_TargetAssemblyTypeName: logic, Assembly-CSharp
-        m_MethodName: addmoney
+        m_MethodName: addMonpay
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
+          m_IntArgument: 500
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1859609235}
+        m_TargetAssemblyTypeName: logic, Assembly-CSharp
+        m_MethodName: replaceWithNextButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2240,7 +2285,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Change suppier
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6c5e503130494a269aa7673106868b5, type: 2}
   m_sharedMaterial: {fileID: -2763772915261216280, guid: d6c5e503130494a269aa7673106868b5, type: 2}
@@ -2267,8 +2312,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2451,7 +2496,7 @@ MonoBehaviour:
   monPay: 0
   customer: 0
   month: 0
-  NextButton: {fileID: 0}
+  NextButton: {fileID: 7325163498613175738, guid: 2f8722f6a7dd94028a632c8dacc3a3a0, type: 3}
 --- !u!4 &1859609236
 Transform:
   m_ObjectHideFlags: 0
@@ -2610,7 +2655,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Eat cake
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6c5e503130494a269aa7673106868b5, type: 2}
   m_sharedMaterial: {fileID: -2763772915261216280, guid: d6c5e503130494a269aa7673106868b5, type: 2}
@@ -2745,7 +2790,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Accept
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6c5e503130494a269aa7673106868b5, type: 2}
   m_sharedMaterial: {fileID: -2763772915261216280, guid: d6c5e503130494a269aa7673106868b5, type: 2}
