@@ -14,6 +14,9 @@ public class startGame : MonoBehaviour
         PlayerPrefs.SetInt("interest", 0);
         PlayerPrefs.SetInt("customer", 0);
         PlayerPrefs.SetInt("month", 0);
+        PlayerPrefs.SetInt("monPay", 5000);
+        PlayerPrefs.SetInt("employeecount", 3);
+        PlayerPrefs.SetInt("percent",100);
     }
 
     // Update is called once per frame

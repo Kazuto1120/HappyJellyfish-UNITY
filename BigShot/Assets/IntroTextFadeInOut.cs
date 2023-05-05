@@ -27,7 +27,7 @@ public class IntroTextFadeInOut : MonoBehaviour
                 Destroy(GameObject.Find("to continue"));
                 Destroy(GameObject.Find("spacebar"));
                 StartCoroutine(FadeTextToFullAlpha(1f, textField));
-                textField.fontSize = 100;
+                textField.fontSize = 40;
                 textField.text = "WITH THE CURRENT STATE OF THE ECONOMY, THE ONLY WAY TO BECOME TRULY SUCESSFUL TO BE ABLE TO RUN A SUCCESSFUL BUSINESS";
             }
             if(spaceBarCount==2){
@@ -37,7 +37,7 @@ public class IntroTextFadeInOut : MonoBehaviour
             if(spaceBarCount==3){
                 StartCoroutine(FadeTextToFullAlpha(1f, GetComponent<TMP_Text>()));
                 textField.text = "CAN YOU BECOME THE NEXT BIGSHOT";
-                textField.fontSize = 150;
+                textField.fontSize = 80;
                 SpawnPlayButton();
             }
         }

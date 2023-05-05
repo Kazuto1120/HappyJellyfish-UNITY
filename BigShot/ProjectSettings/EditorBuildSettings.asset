@@ -123,7 +123,7 @@ EditorBuildSettings:
     path: Assets/Scenes/gameover.unity
     guid: 85d1f11b1d6c9e4479e7b26c5c6b669b
   - enabled: 1
-    path: Assets/Scenes/BrokenPrinter.unity
+    path: Assets/Scenes/EVENT0.unity
     guid: dbee8df9a067b9844a760474431374c9
   - enabled: 1
     path: Assets/Scenes/EVENT1.unity
