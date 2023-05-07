@@ -593,9 +593,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 561517566}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6cfa3c607d9fd646bdb43eafe367fa5, type: 3}
+  m_Script: {fileID: 11500000, guid: ceff6168384a4a643903f46a7c79e624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slider: {fileID: 849861054}
+  gamePanel: {fileID: 2111149770}
+  startTime: 10
+  currentTime: 0
+  countBegan: 0
+  miniGameOver: 0
+  countDownText: {fileID: 575027402}
 --- !u!4 &561517568
 Transform:
   m_ObjectHideFlags: 0
