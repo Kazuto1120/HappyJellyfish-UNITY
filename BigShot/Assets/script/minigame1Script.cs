@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class minigame1Script : MonoBehaviour
 {
     public Slider slider;
-    private float lossSpeed = 0.01f;
+    private float lossSpeed = 0.3f;
     private float gainSpeed = 0.07f;
     public GameObject gamePanel;
     public float startTime = 10;
@@ -43,10 +43,10 @@ public class minigame1Script : MonoBehaviour
 
     private void FixedUpdate() {
         if (slider.value > 0 && !miniGameOver) {
-            if (slider.value - lossSpeed < 0) {
+            if (slider.value - lossSpeed * Time.deltaTime < 0) {
                 slider.value = 0;
             } else {
-                slider.value -= lossSpeed;
+                slider.value -= lossSpeed * Time.deltaTime;
             }
         }
 
