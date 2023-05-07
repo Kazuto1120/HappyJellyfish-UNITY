@@ -1338,12 +1338,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1859609235}
         m_TargetAssemblyTypeName: logic, Assembly-CSharp
-        m_MethodName: addmoney
+        m_MethodName: addMonpay
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -10000
+          m_IntArgument: 5000
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1360,21 +1360,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1859609235}
+      - m_Target: {fileID: 4513238071831086003, guid: de48a39f5f97e95419ebbd0e17d4613c, type: 3}
         m_TargetAssemblyTypeName: logic, Assembly-CSharp
-        m_MethodName: addcost
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5000
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2146708631}
-        m_TargetAssemblyTypeName: ChoiceButtonsToNext, Assembly-CSharp
-        m_MethodName: ReplaceWithNextButton
+        m_MethodName: replaceWithNextButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1675,7 +1663,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1692,9 +1680,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2146708631}
-        m_TargetAssemblyTypeName: ChoiceButtonsToNext, Assembly-CSharp
-        m_MethodName: ReplaceWithNextButton
+      - m_Target: {fileID: 4513238071831086003, guid: de48a39f5f97e95419ebbd0e17d4613c, type: 3}
+        m_TargetAssemblyTypeName: logic, Assembly-CSharp
+        m_MethodName: replaceWithNextButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2079,12 +2067,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1859609235}
         m_TargetAssemblyTypeName: logic, Assembly-CSharp
-        m_MethodName: addmoney
+        m_MethodName: addMonpay
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -30000
+          m_IntArgument: 10000
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2101,21 +2089,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1859609235}
+      - m_Target: {fileID: 4513238071831086003, guid: de48a39f5f97e95419ebbd0e17d4613c, type: 3}
         m_TargetAssemblyTypeName: logic, Assembly-CSharp
-        m_MethodName: addcost
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10000
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2146708631}
-        m_TargetAssemblyTypeName: ChoiceButtonsToNext, Assembly-CSharp
-        m_MethodName: ReplaceWithNextButton
+        m_MethodName: replaceWithNextButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

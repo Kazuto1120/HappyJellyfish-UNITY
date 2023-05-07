@@ -16,10 +16,19 @@ public class logic : MonoBehaviour
     public int monPay = 5000;
     public int customer = 0;
     public int month = 0;
-    [SerializeField] GameObject NextButton; 
-
+    [SerializeField] int count = 0;
+    [SerializeField] int employeecount = 3;
+    [SerializeField] int percent = 100;
+    [SerializeField] GameObject NextButton;
+    private void Awake()
+    {
+        morale = GameObject.Find("morale");
+    }
     private void Start()
     {
+        percent = PlayerPrefs.GetInt("percent");
+        employeecount = PlayerPrefs.GetInt("employeecount");
+        count = PlayerPrefs.GetInt("count");
         moneynum = PlayerPrefs.GetInt("moneynum");
         debtnum = PlayerPrefs.GetInt("debtnum");
         moralenum = PlayerPrefs.GetInt("moralenum");
@@ -28,9 +37,39 @@ public class logic : MonoBehaviour
         month = PlayerPrefs.GetInt("month");
         
     }
+    public void addemployee(int num)
+    {
+        employeecount += num;
+        PlayerPrefs.SetInt("employeecount",num);
+        if(employeecount <= 0)
+        {
+            PlayerPrefs.SetString("endmessage","You run out of employee");
+            SceneManager.LoadScene("gameover");
+        }
+    }
+    public void share(int num)
+    {
+        percent += num;
+        PlayerPrefs.SetInt("percent", percent);
+        if (percent <= 0)
+        {
+            PlayerPrefs.SetString("endmessage","you lost all your share of the buiness");
+            SceneManager.LoadScene("gameover");
+        }
+    }
+    public void addMonpay(int num)
+    {
+        monPay += num;
+        PlayerPrefs.SetInt("monPay", monPay);
+    }
     public void addmoney(int num) {
         moneynum += num;
         PlayerPrefs.SetInt("moneynum",moneynum);
+        if (moneynum < 0)
+        {
+            PlayerPrefs.SetString("endmessage","You run of of money");
+            SceneManager.LoadScene("gameover");
+        }
     }
     
     public void adddebt(int num)
@@ -46,6 +85,11 @@ public class logic : MonoBehaviour
         {
             moralenum = 100;
         }
+        if ( moralenum < 0)
+        {
+            PlayerPrefs.SetString("endmessage", "Your employee lost all morale and decided to all quit");
+            SceneManager.LoadScene("gameover");
+        }
         PlayerPrefs.SetInt("moralenum",moralenum);
     }
     public void addcost(int num) {
@@ -59,17 +103,36 @@ public class logic : MonoBehaviour
         customer += temp;
         PlayerPrefs.SetInt("customer", customer);
     }
+    public void addcustomer(int num,int range)
+    {
+        int temp = Random.Range(0 + num, range + num);
+        customer += temp;
+        PlayerPrefs.SetInt("customer", customer);
+    }
+    public void multcustomer(int num)
+    {
+        int temp = Random.Range(0 + num, 1 + num);
+        customer *= temp;
+        PlayerPrefs.SetInt("customer", customer);
+    }
     public void nextscene()
     {
+
         int x = Random.Range(1,4);
-        if (x < 2)
+        if ((x < 2&&count>=1)||count>2)
         {
+            count = 0;
+            PlayerPrefs.SetInt("count", count);
             scene();
+            
         }
         else
         {
-            int y = Random.RandomRange(16, 19);
-        SceneManager.LoadScene(y);
+            count++;
+            PlayerPrefs.SetInt("count", count);
+            int y = Random.RandomRange(16, 23);
+            
+             SceneManager.LoadScene(y);
         }
     }
     public void scene() {
@@ -91,16 +154,18 @@ public class logic : MonoBehaviour
         GameObject canvas = GameObject.Find("Canvas");
         Instantiate(NextButton, position, Quaternion.identity, canvas.transform);
     }
+    public void pay()
+    {
+        int temp = (int)((customer*moralenum)*((double)percent/100))-(debtnum/12)-(employeecount*1000)-monPay;
+        Debug.Log(temp);
+        addmoney(temp);
+        adddebt(-(debtnum / (12)));
+    }
 
     void Update()
     {
         morale.GetComponent<Slider>().value = moralenum;
         debt.text = debtnum.ToString();
         money.text = moneynum.ToString();
-        monPay = (int)(debtnum / 10);
-        if(moneynum < 0||moralenum < 0)
-        {
-            SceneManager.LoadScene("gameover");
-        }
     }
 }
