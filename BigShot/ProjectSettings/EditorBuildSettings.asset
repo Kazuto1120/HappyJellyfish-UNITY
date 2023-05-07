@@ -146,6 +146,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EVENT7.unity
     guid: 8143019790310b745a34c3a3fd2f1f20
+  - enabled: 1
+    path: Assets/Scenes/EVENT8.unity
+    guid: 7be65ed4823bdf648b686a827e72cad7
+  - enabled: 1
+    path: Assets/Scenes/EVENT9.unity
+    guid: ed1234f5cb10a684aae59542290fde3e
+  - enabled: 1
+    path: Assets/Scenes/EVENT10.unity
+    guid: abef3c98d3f73df439233b950b2449fb
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

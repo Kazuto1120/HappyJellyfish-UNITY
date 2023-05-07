@@ -744,7 +744,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: two if your employee are have a raging debate on whether or not pineapple
+  m_text: two of your employee are have a raging debate on whether or not pineapple
     belong on pizza. Who are you going to side with?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6c5e503130494a269aa7673106868b5, type: 2}
@@ -2192,6 +2192,9 @@ MonoBehaviour:
   monPay: 0
   customer: 0
   month: 0
+  count: 0
+  employeecount: 3
+  percent: 100
   NextButton: {fileID: 7325163498613175738, guid: 2f8722f6a7dd94028a632c8dacc3a3a0, type: 3}
 --- !u!4 &1859609236
 Transform:

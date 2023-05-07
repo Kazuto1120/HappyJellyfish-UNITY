@@ -603,8 +603,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Employee complain to you that they are not getting pay enough and is demanding
-    more. What would you do?
+  m_text: You have just been met with a lawsuit for wrongful termination. How are
+    you going to deal with this?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6c5e503130494a269aa7673106868b5, type: 2}
   m_sharedMaterial: {fileID: -2763772915261216280, guid: d6c5e503130494a269aa7673106868b5, type: 2}
@@ -926,18 +926,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1859609235}
         m_TargetAssemblyTypeName: logic, Assembly-CSharp
-        m_MethodName: addmorale
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -5
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1859609235}
-        m_TargetAssemblyTypeName: logic, Assembly-CSharp
         m_MethodName: replaceWithNextButton
         m_Mode: 1
         m_Arguments:
@@ -950,15 +938,14 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1114941673}
         m_TargetAssemblyTypeName: scenevent, Assembly-CSharp
-        m_MethodName: changetext
-        m_Mode: 5
+        m_MethodName: lawsuit
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 10
           m_FloatArgument: 0
-          m_StringArgument: What did you say someting? Sorry I am currently at a
-            Obama fashion show. Talk to you later
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1114941671
@@ -1292,30 +1279,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1859609235}
         m_TargetAssemblyTypeName: logic, Assembly-CSharp
-        m_MethodName: addmorale
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1859609235}
-        m_TargetAssemblyTypeName: logic, Assembly-CSharp
-        m_MethodName: addcost
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -100
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1859609235}
-        m_TargetAssemblyTypeName: logic, Assembly-CSharp
         m_MethodName: replaceWithNextButton
         m_Mode: 1
         m_Arguments:
@@ -1328,15 +1291,14 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1371424579}
         m_TargetAssemblyTypeName: scenevent, Assembly-CSharp
-        m_MethodName: changetext
-        m_Mode: 5
+        m_MethodName: lawsuit
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Yeah show your employee how disposable they are. Wait
-            who going to work next Monday again?
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1371424577
@@ -1765,30 +1727,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1859609235}
         m_TargetAssemblyTypeName: logic, Assembly-CSharp
-        m_MethodName: addcost
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1000
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1859609235}
-        m_TargetAssemblyTypeName: logic, Assembly-CSharp
-        m_MethodName: addmorale
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1859609235}
-        m_TargetAssemblyTypeName: logic, Assembly-CSharp
         m_MethodName: replaceWithNextButton
         m_Mode: 1
         m_Arguments:
@@ -1801,15 +1739,26 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1575792248}
         m_TargetAssemblyTypeName: scenevent, Assembly-CSharp
-        m_MethodName: changetext
-        m_Mode: 5
+        m_MethodName: lawsuit
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 70
           m_FloatArgument: 0
-          m_StringArgument: You agree to your employee demand but your wallet will
-            surely feel the pain
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1859609235}
+        m_TargetAssemblyTypeName: logic, Assembly-CSharp
+        m_MethodName: addmoney
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -2000
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1575792246
@@ -2141,7 +2090,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ignore
+  m_text: no lawyer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6c5e503130494a269aa7673106868b5, type: 2}
   m_sharedMaterial: {fileID: -2763772915261216280, guid: d6c5e503130494a269aa7673106868b5, type: 2}
@@ -2486,6 +2435,9 @@ MonoBehaviour:
   monPay: 0
   customer: 0
   month: 0
+  count: 0
+  employeecount: 3
+  percent: 100
   NextButton: {fileID: 7325163498613175738, guid: 2f8722f6a7dd94028a632c8dacc3a3a0, type: 3}
 --- !u!4 &1859609236
 Transform:
@@ -2568,7 +2520,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: fire them
+  m_text: ammit it
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6c5e503130494a269aa7673106868b5, type: 2}
   m_sharedMaterial: {fileID: -2763772915261216280, guid: d6c5e503130494a269aa7673106868b5, type: 2}
@@ -2703,7 +2655,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: agree
+  m_text: Lawyer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6c5e503130494a269aa7673106868b5, type: 2}
   m_sharedMaterial: {fileID: -2763772915261216280, guid: d6c5e503130494a269aa7673106868b5, type: 2}

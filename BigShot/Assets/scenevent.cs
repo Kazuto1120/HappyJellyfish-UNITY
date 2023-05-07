@@ -35,6 +35,20 @@ public class scenevent : MonoBehaviour
 
 
     }
+   
+    public void lawsuit(int i)
+    {
+        int temp =(int) Random.Range(1, 100);
+        if (temp <= i)
+        {
+            changetext("congret you won the lawsuit, show your former employee that you are not to be mess with");
+        }
+        else
+        {
+            changetext("Well, you can't say that you did not expect a day like this to come");
+            logicmanager.GetComponent<logic>().addmoney(-8000);
+        }
+    }
     
     // Update is called once per frame
     void Update()

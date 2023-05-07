@@ -156,7 +156,7 @@ public class logic : MonoBehaviour
     }
     public void pay()
     {
-        int temp = ((customer*moralenum)*10)-(debtnum/12)-(employeecount*1000)-monPay;
+        int temp = (int)((customer*moralenum)*((double)percent/100))-(debtnum/12)-(employeecount*1000)-monPay;
         Debug.Log(temp);
         addmoney(temp);
         adddebt(-(debtnum / (12)));
