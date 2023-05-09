@@ -959,6 +959,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9109087582353126557, guid: ba519cd51c9fd084ca34191f7a6ffa24, type: 3}
+      propertyPath: m_TagString
+      value: Music
+      objectReference: {fileID: 0}
     - target: {fileID: 9109087582353126558, guid: ba519cd51c9fd084ca34191f7a6ffa24, type: 3}
       propertyPath: m_audioClip
       value: 
