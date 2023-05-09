@@ -7,13 +7,14 @@ public class minigame1Script : MonoBehaviour
 {
     public Slider slider;
     private float lossSpeed = 0.3f;
-    private float gainSpeed = 0.07f;
+    private float gainSpeed = 0.06f;
     public GameObject gamePanel;
     public float startTime = 10;
     public float currentTime;
     public bool countBegan = false;
     public bool miniGameOver = false;
     [SerializeField] Text countDownText;
+    [SerializeField] GameObject NextButton;
 
     // Start is called before the first frame update
     void Start()
@@ -66,6 +67,9 @@ public class minigame1Script : MonoBehaviour
                 currentTime = 0;
                 countBegan = false;
                 miniGameOver = true;
-            }
+            Vector3 position = new Vector3((float)7.67, (float)0.83, 0);
+            GameObject canvas = GameObject.Find("Canvas");
+            Instantiate(NextButton, position, Quaternion.identity, canvas.transform);
+        }
     }
 }
