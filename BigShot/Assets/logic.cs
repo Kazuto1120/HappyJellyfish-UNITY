@@ -130,7 +130,7 @@ public class logic : MonoBehaviour
         {
             count++;
             PlayerPrefs.SetInt("count", count);
-            int y = Random.RandomRange(16, 27);
+            int y = Random.RandomRange(16, 28);
             
              SceneManager.LoadScene(y);
         }

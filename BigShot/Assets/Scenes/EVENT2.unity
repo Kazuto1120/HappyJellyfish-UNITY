@@ -779,7 +779,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -2
+          m_IntArgument: -5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2095,6 +2095,9 @@ MonoBehaviour:
   monPay: 0
   customer: 0
   month: 0
+  count: 0
+  employeecount: 3
+  percent: 100
   NextButton: {fileID: 7325163498613175738, guid: 2f8722f6a7dd94028a632c8dacc3a3a0, type: 3}
 --- !u!4 &1859609236
 Transform:
