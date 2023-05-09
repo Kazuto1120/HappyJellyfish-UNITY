@@ -69,7 +69,7 @@ public class minigame1Script : MonoBehaviour
                 currentTime = 0;
                 countBegan = false;
                 miniGameOver = true;
-            Vector3 position = new Vector3((float)7.67, (float)0.83, 0);
+            Vector3 position = new Vector3((float)6.8, (float)0.83, 0);
             GameObject canvas = GameObject.Find("Canvas");
             Instantiate(NextButton, position, Quaternion.identity, canvas.transform);
             if (slider.value >= .9) {
