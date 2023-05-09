@@ -40,7 +40,7 @@ public class logic : MonoBehaviour
     public void addemployee(int num)
     {
         employeecount += num;
-        PlayerPrefs.SetInt("employeecount",num);
+        PlayerPrefs.SetInt("employeecount",employeecount);
         if(employeecount <= 0)
         {
             PlayerPrefs.SetString("endmessage","You run out of employee");

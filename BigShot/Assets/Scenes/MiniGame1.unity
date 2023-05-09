@@ -778,6 +778,7 @@ MonoBehaviour:
   countBegan: 0
   miniGameOver: 0
   countDownText: {fileID: 575027402}
+  NextButton: {fileID: 7325163498613175738, guid: 2f8722f6a7dd94028a632c8dacc3a3a0, type: 3}
 --- !u!1 &575027401
 GameObject:
   m_ObjectHideFlags: 0
