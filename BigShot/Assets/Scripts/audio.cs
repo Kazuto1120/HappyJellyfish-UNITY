@@ -10,12 +10,20 @@ public class audio : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
+
         
         slider = GameObject.Find("Slider");
         slider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("volume",1f);
-        DontDestroyOnLoad(transform.gameObject);
+        
         
         audio1.volume = slider.GetComponent<Slider>().value;
+
+        GameObject[] musicObj = GameObject.FindGameObjectsWithTag("Music");
+        if (musicObj.Length > 1) {
+            Destroy(this.gameObject);
+        }
+        DontDestroyOnLoad(this.gameObject);
+
     }
     public void volume()
     {
