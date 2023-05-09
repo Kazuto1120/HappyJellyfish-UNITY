@@ -15,11 +15,13 @@ public class minigame1Script : MonoBehaviour
     public bool miniGameOver = false;
     [SerializeField] Text countDownText;
     [SerializeField] GameObject NextButton;
+    public logic logicScript;
 
     // Start is called before the first frame update
     void Start()
     {
         currentTime = startTime;
+        logicScript = GameObject.FindGameObjectWithTag("Logic").GetComponent<logic>();
     }
 
     // Update is called once per frame
@@ -70,6 +72,13 @@ public class minigame1Script : MonoBehaviour
             Vector3 position = new Vector3((float)7.67, (float)0.83, 0);
             GameObject canvas = GameObject.Find("Canvas");
             Instantiate(NextButton, position, Quaternion.identity, canvas.transform);
+            if (slider.value >= .9) {
+                logicScript.addmoney(10000);
+            } else if (slider.value >= .6) {
+                logicScript.addmoney(7500);
+            } else if (slider.value >= .25) {
+                logicScript.addmoney(3000);
+            }
         }
     }
 }

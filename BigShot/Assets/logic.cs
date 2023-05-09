@@ -65,6 +65,7 @@ public class logic : MonoBehaviour
     public void addmoney(int num) {
         moneynum += num;
         PlayerPrefs.SetInt("moneynum",moneynum);
+        money.text = PlayerPrefs.GetInt("moneynum").ToString();
         if (moneynum < 0)
         {
             PlayerPrefs.SetString("endmessage","You run of of money");
@@ -130,7 +131,7 @@ public class logic : MonoBehaviour
         {
             count++;
             PlayerPrefs.SetInt("count", count);
-            int y = Random.RandomRange(16, 28);
+            int y = Random.Range(16, 28);
             
              SceneManager.LoadScene(y);
         }
