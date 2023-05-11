@@ -19,6 +19,7 @@ public class minigame1Script : MonoBehaviour
     void Start()
     {
         currentTime = startTime;
+        
     }
 
     // Update is called once per frame
@@ -61,7 +62,6 @@ public class minigame1Script : MonoBehaviour
         if (currentTime <= 5) {
                 countDownText.color = Color.red;
             }
-
         if (currentTime <= 0) {
                 currentTime = 0;
                 countBegan = false;
