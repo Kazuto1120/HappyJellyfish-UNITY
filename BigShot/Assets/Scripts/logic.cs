@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 using TMPro;
 
 public class logic : MonoBehaviour
@@ -153,7 +154,8 @@ public class logic : MonoBehaviour
     {
         Vector3 position = new Vector3((float)4.67, (float)0.83, 0);
         GameObject canvas = GameObject.Find("Canvas");
-        Instantiate(NextButton, position, Quaternion.identity, canvas.transform);
+        GameObject nextButton = Instantiate(NextButton, position, Quaternion.identity, canvas.transform);
+        EventSystem.current.SetSelectedGameObject(nextButton);
     }
     public void pay()
     {
