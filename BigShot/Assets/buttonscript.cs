@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 
 public class buttonscript : MonoBehaviour
@@ -34,6 +35,7 @@ public class buttonscript : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         Pause = false;
+        EventSystem.current.SetSelectedGameObject(EventSystem.current.firstSelectedGameObject);
     }
     public void pause()
     {
