@@ -744,8 +744,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: the economy has been quite bad recently and you are not getting as much
-    customer
+  m_text: the economy has been quite bad recently and you are not getting as many
+    customers.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6c5e503130494a269aa7673106868b5, type: 2}
   m_sharedMaterial: {fileID: -2763772915261216280, guid: d6c5e503130494a269aa7673106868b5, type: 2}

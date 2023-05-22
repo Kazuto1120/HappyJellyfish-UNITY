@@ -603,8 +603,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Employee complain to you that they are not getting pay enough and is demanding
-    more. What would you do?
+  m_text: An employee complains to you that they are not getting paid enough and
+    is demanding more. What do you do?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6c5e503130494a269aa7673106868b5, type: 2}
   m_sharedMaterial: {fileID: -2763772915261216280, guid: d6c5e503130494a269aa7673106868b5, type: 2}
@@ -958,7 +958,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: What did you say someting? Sorry I am currently at a
-            Obama fashion show. Talk to you later
+            fashion show. Talk to you later.
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1114941671
@@ -1335,8 +1335,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Yeah show your employee how disposable they are. Wait
-            who going to work next Monday again?
+          m_StringArgument: Yeah, show your employees how disposable they are. Wait
+            who is going to work next Monday again?
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1371424577
@@ -1808,8 +1808,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: You agree to your employee demand but your wallet will
-            surely feel the pain
+          m_StringArgument: You agree to your employee's demand but your wallet will
+            surely feel the pain.
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1575792246

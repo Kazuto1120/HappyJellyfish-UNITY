@@ -603,8 +603,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Your employee  made a mistake will doing there job. How are you going to
-    deal with them
+  m_text: Your employee made a mistake while doing there job. How are you going to
+    deal with them?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6c5e503130494a269aa7673106868b5, type: 2}
   m_sharedMaterial: {fileID: -2763772915261216280, guid: d6c5e503130494a269aa7673106868b5, type: 2}
@@ -957,7 +957,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: everyone make mistake once in a while. What is important
+          m_StringArgument: everyone makes mistake once in a while. What is important
             is that you dont make the same mistake twice.
           m_BoolArgument: 0
         m_CallState: 2
@@ -1783,9 +1783,9 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: You are setting a bad example for the employee making
+          m_StringArgument: You are setting a bad example for the employees making
             them think they can get away with anything this may cost you money in
-            the future
+            the future.
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1859609235}

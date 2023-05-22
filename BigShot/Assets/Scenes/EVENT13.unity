@@ -958,7 +958,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: What did you say something? Sorry I am currently at a
-            fashion show. Talk to you later
+            fashion show. Talk to you later.
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1114941671
@@ -1809,7 +1809,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: You agree to your employee's demand but your wallet will
-            surely feel the pain
+            surely feel the pain.
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1575792246

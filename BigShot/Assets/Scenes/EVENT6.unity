@@ -744,8 +744,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: two of your employee are have a raging debate on whether or not pineapple
-    belong on pizza. Who are you going to side with?
+  m_text: two of your employees are have a raging debate on whether or not pineapple
+    belongs on pizza. Who are you going to side with?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6c5e503130494a269aa7673106868b5, type: 2}
   m_sharedMaterial: {fileID: -2763772915261216280, guid: d6c5e503130494a269aa7673106868b5, type: 2}
