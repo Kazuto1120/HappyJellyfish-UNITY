@@ -1253,6 +1253,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1789748531741333354, guid: 2f8722f6a7dd94028a632c8dacc3a3a0, type: 3}
   m_PrefabInstance: {fileID: 1383870274}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1383870276 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7325163498613175738, guid: 2f8722f6a7dd94028a632c8dacc3a3a0, type: 3}
+  m_PrefabInstance: {fileID: 1383870274}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1482628787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1303,7 +1308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1383870276}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1482628790
@@ -1839,6 +1844,9 @@ MonoBehaviour:
   monPay: 0
   customer: 0
   month: 0
+  count: 0
+  employeecount: 3
+  percent: 100
   NextButton: {fileID: 7325163498613175738, guid: 2f8722f6a7dd94028a632c8dacc3a3a0, type: 3}
 --- !u!4 &1859609236
 Transform:
