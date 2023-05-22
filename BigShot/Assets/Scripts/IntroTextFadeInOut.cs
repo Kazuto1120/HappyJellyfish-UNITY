@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using TMPro;
 
 public class IntroTextFadeInOut : MonoBehaviour
@@ -54,7 +55,8 @@ public class IntroTextFadeInOut : MonoBehaviour
     void SpawnPlayButton(){
         Vector3 position = new Vector3(0, (float)-1.7, 0);
         GameObject canvas = GameObject.FindGameObjectWithTag("canvas");
-        Instantiate(PlayButton, position, Quaternion.identity, canvas.transform);
+        GameObject playButton = Instantiate(PlayButton, position, Quaternion.identity, canvas.transform);
+        EventSystem.current.SetSelectedGameObject(playButton);
     }
 
 }
