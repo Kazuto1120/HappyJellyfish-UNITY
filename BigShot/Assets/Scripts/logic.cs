@@ -137,6 +137,13 @@ public class logic : MonoBehaviour
              SceneManager.LoadScene(y);
         }
     }
+
+    public void gameWon(){
+        int money = PlayerPrefs.GetInt("moneynum");
+        PlayerPrefs.SetString("endmessage", "Congratulation! You made it through the 12 months with $" + money + " left.");
+        SceneManager.LoadScene("gameover");
+    }
+
     public void scene() {
         month += 1;
         PlayerPrefs.SetInt("month", month);
@@ -157,6 +164,7 @@ public class logic : MonoBehaviour
         GameObject nextButton = Instantiate(NextButton, position, Quaternion.identity, canvas.transform);
         EventSystem.current.SetSelectedGameObject(nextButton);
     }
+
     public void pay()
     {
         int temp = (int)((customer*moralenum)*((double)percent/100))-(debtnum/12)-(employeecount*1000)-monPay;

@@ -275,14 +275,18 @@ PrefabInstance:
     - target: {fileID: 1789748531741333352, guid: 2f8722f6a7dd94028a632c8dacc3a3a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1859609235}
+      objectReference: {fileID: 4513238071831086003, guid: de48a39f5f97e95419ebbd0e17d4613c, type: 3}
     - target: {fileID: 1789748531741333352, guid: 2f8722f6a7dd94028a632c8dacc3a3a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1789748531741333352, guid: 2f8722f6a7dd94028a632c8dacc3a3a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: gameWon
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789748531741333352, guid: 2f8722f6a7dd94028a632c8dacc3a3a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: pay
+      value: gameWon
       objectReference: {fileID: 0}
     - target: {fileID: 1789748531741333352, guid: 2f8722f6a7dd94028a632c8dacc3a3a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
