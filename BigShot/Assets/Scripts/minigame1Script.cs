@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class minigame1Script : MonoBehaviour
 {
@@ -70,7 +71,7 @@ public class minigame1Script : MonoBehaviour
                 miniGameOver = true;
             Vector3 position = new Vector3((float)6.8, (float)0.83, 0);
             GameObject canvas = GameObject.Find("Canvas");
-            Instantiate(NextButton, position, Quaternion.identity, canvas.transform);
+            GameObject nextButton = Instantiate(NextButton, position, Quaternion.identity, canvas.transform);
             if (slider.value >= .9) {
                 logicScript.addmoney(10000);
             } else if (slider.value >= .6) {
@@ -78,6 +79,7 @@ public class minigame1Script : MonoBehaviour
             } else if (slider.value >= .25) {
                 logicScript.addmoney(3000);
             }
+           // EventSystem.current.SetSelectedGameObject(nextButton);
         }
     }
 }
