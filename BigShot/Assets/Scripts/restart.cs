@@ -7,6 +7,12 @@ public class restart : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene("Game Intro");
+        
     }
-   
+    public void tutorial()
+    {
+        SceneManager.LoadScene("tutorial");
+
+    }
+
 }
