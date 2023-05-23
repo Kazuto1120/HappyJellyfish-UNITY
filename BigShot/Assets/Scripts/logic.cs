@@ -21,6 +21,7 @@ public class logic : MonoBehaviour
     [SerializeField] int employeecount = 3;
     [SerializeField] int percent = 100;
     [SerializeField] GameObject NextButton;
+    static ArrayList myList = new ArrayList();
     private void Awake()
     {
         morale = GameObject.Find("morale");
@@ -36,7 +37,28 @@ public class logic : MonoBehaviour
         customer = PlayerPrefs.GetInt("customer");
         monPay = PlayerPrefs.GetInt("monPay");
         month = PlayerPrefs.GetInt("month");
-        
+        if (myList.Count == 0) {
+            restock();
+        }
+    }
+
+    public void restock() {
+        for (int i = 16; i <= 28; i++) {
+            myList.Add(i);
+        }
+    }
+
+    public int removeElement(int index) {
+        int temp = (int)myList[index];
+        myList.RemoveAt(index);
+        if (myList.Count == 0) {
+            restock();
+        }
+        return temp;
+    }
+
+    public int listSize() {
+        return myList.Count;
     }
     public void addemployee(int num)
     {
@@ -121,20 +143,22 @@ public class logic : MonoBehaviour
     {
 
         int x = Random.Range(1,4);
-        if ((x < 2&&count>=1)||count>2)
+        if ((x <= 2 && count >= 1)||count>2)
         {
             count = 0;
             PlayerPrefs.SetInt("count", count);
             scene();
-            
         }
         else
         {
             count++;
             PlayerPrefs.SetInt("count", count);
-            int y = Random.Range(16, 28);
-            
-             SceneManager.LoadScene(y);
+            int y = Random.Range(0, listSize());
+            int scene = removeElement(y);
+            foreach (int scenes in myList) {
+                Debug.Log(scenes.ToString());
+            }
+            SceneManager.LoadScene(scene);
         }
     }
 

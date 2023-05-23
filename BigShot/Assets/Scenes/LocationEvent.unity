@@ -2815,6 +2815,7 @@ MonoBehaviour:
   money: {fileID: 110062806}
   debt: {fileID: 1298465722}
   morale: {fileID: 518514635}
+  hashSet: {fileID: 0}
   moneynum: 0
   debtnum: 0
   moralenum: 0

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChangeBackground : MonoBehaviour
 {
@@ -21,7 +22,9 @@ public class ChangeBackground : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (SceneManager.GetActiveScene().buildIndex == 0) {
+			Destroy(gameObject);
+		}
     }
 
     public void LoadHighEndBG(){
