@@ -805,8 +805,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Well you are the bost right. Who gave the employee the
-            right of  telling you what to do.
+          m_StringArgument: Well you are the boss right. Who gave the employee the
+            right of telling you what to do?
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1114941671
@@ -937,7 +937,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Your employee is complaining that there is too much work and is demanding
-    you to hire some new employee. What you do?
+    you to hire a new employee. What you do?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6c5e503130494a269aa7673106868b5, type: 2}
   m_sharedMaterial: {fileID: -2763772915261216280, guid: d6c5e503130494a269aa7673106868b5, type: 2}
@@ -1628,8 +1628,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: You are such a good boss for listing to your employee
-            complain. But your wallet  wont think the same thing
+          m_StringArgument: You are such a good boss for listening to your employee
+            complaints. But your wallet  wont think the same thing.
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1575792246

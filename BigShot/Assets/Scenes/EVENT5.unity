@@ -744,8 +744,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You just recieve a big order but it will require you force all your employee
-    to work overtime. do you accept this order?
+  m_text: You just recieve a big order but it will force all your employees to work
+    overtime. do you accept this order?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6c5e503130494a269aa7673106868b5, type: 2}
   m_sharedMaterial: {fileID: -2763772915261216280, guid: d6c5e503130494a269aa7673106868b5, type: 2}
@@ -1098,7 +1098,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: your employee are thankful that they got such a good
+          m_StringArgument: your employees are thankful that they have such a good
             boss maybe they will even stop calling you by the nickname squidward.
           m_BoolArgument: 0
         m_CallState: 2
@@ -1730,8 +1730,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Well the point of having a employee is for them to make
-            you money Right?
+          m_StringArgument: Well the point of having employees is for them to make
+            you money right?
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1575792246
