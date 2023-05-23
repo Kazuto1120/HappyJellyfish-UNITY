@@ -1236,7 +1236,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: You decided to be a cheapskate and save some money. However
-            your employee are annoy that they have to deal with not having a printer
+            your employees are annoyed that they have to deal with not having a printer.
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1114941671
@@ -1556,7 +1556,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: You decide to splurge and buy a new printer. Your employee
+          m_StringArgument: You decide to splurge and buy a new printer. Your employees
             are happy to have a boss like you.
           m_BoolArgument: 0
         m_CallState: 2
@@ -1882,7 +1882,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: You decide it is better to fix the printer
+          m_StringArgument: You decide it is better to fix the printer.
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1575792246
