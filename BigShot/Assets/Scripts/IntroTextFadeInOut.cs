@@ -21,7 +21,7 @@ public class IntroTextFadeInOut : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space)){
+        if(Input.GetKeyDown(KeyCode.Space) && !buttonscript.Pause){
             spaceBarCount++;
             if(spaceBarCount==1){
                 Destroy(GameObject.Find("click"));

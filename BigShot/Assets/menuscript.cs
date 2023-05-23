@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class menuscript : MonoBehaviour
 {
@@ -11,9 +12,11 @@ public class menuscript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        if (SceneManager.GetActiveScene().name.Equals("tutorial")) {
+            destroySelf();
+        }
     }
 
    public void destroySelf() {
