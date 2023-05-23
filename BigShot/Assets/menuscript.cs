@@ -15,4 +15,8 @@ public class menuscript : MonoBehaviour
     {
         
     }
+
+   public void destroySelf() {
+        Destroy(this.gameObject);
+    }
 }

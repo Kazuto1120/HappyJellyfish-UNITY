@@ -33,14 +33,12 @@ public class buttonscript : MonoBehaviour
     public void resume()
     {
         pauseMenu.SetActive(false);
-        Time.timeScale = 1f;
         Pause = false;
         EventSystem.current.SetSelectedGameObject(EventSystem.current.firstSelectedGameObject);
     }
     public void pause()
     {
         pauseMenu.SetActive(true);
-        Time.timeScale = 0f;
         Pause = true;
     }
     
